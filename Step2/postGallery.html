@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Gallery Immagini</h1>
+    <div style="display: flex; gap: 20px;">
+        <% posts.forEach(post => { %>
+            <a href="/post/<%= post.id %>">
+                <img src="<%= post.immagine %>" width="200" style="border: 1px solid #ccc;">
+            </a>
+        <% }) %>
+    </div>
+    <br>
+    <a href="/post">Aggiungi nuovo Post</a>
+</body>
+</html>
